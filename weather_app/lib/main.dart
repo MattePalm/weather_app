@@ -9,6 +9,7 @@ Future<void> main() async {
   runApp(const MyApp());
 }
 final apiKey = dotenv.env['API_KEY'] ?? 'No API Key';
+final baseUrl = dotenv.env['BASE_URL'] ?? 'No Base URL';
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   
@@ -111,8 +112,8 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the buttowefwefsn this many times:',
+             Text(
+              baseUrl,
             ),
             Text(
               '$_counter',
