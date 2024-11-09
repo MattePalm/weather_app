@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:weather_app/weather_service.dart';
 Future<void> main() async {
-  await dotenv.load(); // Ladda .env-filen
-  
+  //await dotenv.load(); // Ladda .env-filen
+  envInformation();
   // Logga ut API-nyckeln för att kontrollera att den är laddad korrekt
-  print("API Key: ${dotenv.env['API_KEY']}");
-
+  //print("API Key: ${dotenv.env['API_KEY']}");
+  //print("cjnjfvjsmnsdncn");
   runApp(const MyApp());
 }
-final apiKey = dotenv.env['API_KEY'] ?? 'No API Key';
-final baseUrl = dotenv.env['BASE_URL'] ?? 'No Base URL';
+//final apiKey = dotenv.env['API_KEY'] ?? 'No API Key';
+//final baseUrl = dotenv.env['BASE_URL'] ?? 'No Base URL';
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyHomePage(title: apiKey),
+      home: MyHomePage(title: 'byter till env i weatherservice'),
     );
   }
 }
@@ -112,8 +113,8 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-             Text(
-              baseUrl,
+             const Text(
+              'urlen är nu i weatherservice.dart',
             ),
             Text(
               '$_counter',
