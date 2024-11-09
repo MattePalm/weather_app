@@ -12,9 +12,12 @@ flutter pub get
 
 Add a .env File
 Since the .env file is included in .gitignore, it won't be in this repo. To run the project, you need to create your own .env file with your API key.
+The API key is free and accessible from "https://openweathermap.org".
+The app uses flutter_dotenv to load the API key from the .env file.
 
 Create a .env file in the root directory of the project.
-Add the following line, replacing your_api_key with your actual API key:
+Add the following lines, replacing your_api_key with your actual API key:
 API_KEY=your_api_key
+BASE_URL=https://api.openweathermap.org/data/2.5/weather?
 
-The app uses flutter_dotenv to load the API key from the .env file.
+
