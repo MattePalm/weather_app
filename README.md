@@ -1,10 +1,10 @@
-this project is not finished!! and the readme is for the current situation and will be updated with the code
+this project is in it's testing phase.
 
 Weather App 🌦️
 A simple weather app built with Flutter. This app is a portfolio project and demonstrates how to use environment variables with .env to keep the API key secure without including it in the GitHub source code.
 
 Features
-Fetches weather data from a weather API service (e.g., OpenWeatherMap).
+Fetches weather data from a weather API service (OpenWeatherMap).
 Displays weather information based on the user's location.
 
 Run the following command to install all required Flutter packages:
