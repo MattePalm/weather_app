@@ -7,6 +7,30 @@ Features
 Fetches weather data from a weather API service (OpenWeatherMap).
 Displays weather information based on the user's location.
 
+For now the application only provide fro the following answers from the API:
+ switch (mainCondition) {
+      case "Thunderstorm":
+        return 'assets/thunder.json';
+      case "Drizzle":
+      case "Rain":
+      case "Shower rain":
+        return 'assets/rainy.json';
+      case "Snow":
+        return 'assets/snow.json';
+      case "Clear":
+        return 'assets/sunny.json';
+      case "Clouds":
+      case "Mist":
+      case "Smoke":
+      case "Haze":
+      case "Dust":
+      case "Fog":
+        return 'assets/cloudy.json';
+      default:
+        return 'assets/sunny.json';
+    }
+    the animations are downloaded from: https://lottiefiles.com
+    
 Run the following command to install all required Flutter packages:
 flutter pub get
 
