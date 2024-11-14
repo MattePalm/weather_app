@@ -83,8 +83,7 @@ After setting up the .env file and installing dependencies, run the app with:
 flutter run
 
 
-This project is in its testing phase and is provided as a portfolio demonstration.
-
+This project is in its testing phase
 
 ---
 
