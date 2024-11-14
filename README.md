@@ -47,7 +47,7 @@ Installation
 
 Clone the repository to your local machine:
 
-git clone https://github.com/your-username/weather_app.git
+
 cd weather_app
 
 2. Install Dependencies
