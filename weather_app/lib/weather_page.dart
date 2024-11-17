@@ -44,7 +44,7 @@ String city = await _weatherService.getCurrentCity();
       case "Shower rain":
         return 'assets/rainy.json';
       case "Snow":
-        return 'assets/snow.json';
+        return 'assets/snowy.json';
       case "Clear":
         return 'assets/sunny.json';
       case "Clouds":
