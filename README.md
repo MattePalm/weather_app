@@ -1,5 +1,5 @@
 This App is Currently in testing phase:
-Update: 17/11 - 24: changing condotion snow to snowy to match the correct name in the assets folder
+Update: 17/11 - 24: changing return snow to snowy in snow condiotion to match the correct name in the assets folder
 
 Weather App 🌦️
 
